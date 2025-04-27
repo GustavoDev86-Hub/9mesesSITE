@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>9 Meses de Amor</title>
+        <style>
+          body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            color: #333;
+          }
+      
+          header {
+            background-color: #ff66b2;
+            color: white;
+            padding: 20px;
+            text-align: center;
+          }
+      
+          section {
+            padding: 30px 15px;
+            text-align: center;
+          }
+      
+          .container {
+            max-width: 900px;
+            margin: 0 auto;
+          }
+      
+          img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            margin: 15px 0;
+          }
+      
+          .timeline-item {
+            margin: 20px 0;
+            background: white;
+            padding: 15px;
+            border-left: 5px solid #ff66b2;
+            border-radius: 5px;
+          }
+      
+          iframe {
+            border-radius: 10px;
+            width: 100%;
+            max-width: 500px;
+          }
+      
+          .hidden-note {
+            display: none;
+            margin-top: 20px;
+            background-color: #ffe6f0;
+            padding: 20px;
+            border-radius: 10px;
+          }
+      
+          .btn, .btn-timeline {
+            padding: 10px 20px;
+            background-color: #ff66b2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+          }
+      
+          footer {
+            background: #ff66b2;
+            color: white;
+            text-align: center;
+            padding: 10px;
+          }
+      
+          /* Modal */
+          .modal {
+            display: none;
+            position: fixed;
+            z-index: 100;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.6);
+          }
+      
+          .modal-content {
+            background-color: white;
+            margin: 15% auto;
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 500px;
+            text-align: center;
+          }
+      
+          .fechar {
+            color: #aaa;
+            float: right;
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+          }
+      
+          .fechar:hover {
+            color: #ff66b2;
+          }
+      
+          /* 📱 Responsividade */
+          @media (max-width: 600px) {
+            h1, h2 {
+              font-size: 1.5em;
+            }
+      
+            .btn, .btn-timeline {
+              font-size: 14px;
+              padding: 8px 16px;
+            }
+      
+            iframe {
+              height: 300px;
+            }
+          }
+        </style>
+      </head>
+      
+<body>
+
+<header>
+  <h1>✨ 9 Meses de Amor ✨</h1>
+  <p>Bem-vinda, meu amor! 💖</p>
+</header>
+
+<section id="Inicio">
+  <div class="container">
+    <h2>Home</h2>
+    <p>Hoje celebramos 9 meses de uma história linda que só está começando...</p>
+    <img src="foto-nos.jpeg" alt="Foto linda do casal">
+  </div>
+</section>
+
+<section id="historia">
+    <div class="container">
+      <h2>Nossa História</h2>
+  
+      <div class="timeline-item">
+        <button class="btn-timeline" onclick="abrirModal('modal1')">
+          21/07/2024: Nosso primeiro beijo 💋
+        </button>
+      </div>
+  
+      <div class="timeline-item">
+        <button class="btn-timeline" onclick="abrirModal('modal2')">
+          17/04/2024: Primeiro “eu te amo” 💌
+        </button>
+      </div>
+  
+      <div class="timeline-item">
+        <button class="btn-timeline" onclick="abrirModal('modal3')">
+          27/04/2025: Completamos 9 meses! 🎉
+        </button>
+      </div>
+    </div>
+  </section>
+  
+  
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <span class="fechar" onclick="fecharModal('modal1')">&times;</span>
+      <h3>Nosso primeiro beijo 💋</h3>
+      <p>Foi naquela noite inesquecível, naquela volta timida da igreja, quando nossos olhares se cruzaram e tudo fez sentido e nossos labios se tocaram pela primeira vez. 💫</p>
+    </div>
+  </div>
+  
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <span class="fechar" onclick="fecharModal('modal2')">&times;</span>
+      <h3>Primeiro “eu te amo” 💌</h3>
+      <p>Eu estava nervoso, mas não aguentava mais guardar aquilo. Então pensei, se eu disser isso ela me acharia meio maluquinho? Foi onde então tomei coragem e disse TE AMO pela primeira vez.</p>
+    </div>
+  </div>
+  
+  <div id="modal3" class="modal">
+    <div class="modal-content">
+      <span class="fechar" onclick="fecharModal('modal3')">&times;</span>
+      <h3>Completamos 9 meses! 🎉</h3>
+      <p>9 meses incríveis. Cheios de aprendizados, risadas e amor. Que sorte a minha ter você. ❤️</p>
+    </div>
+  </div>
+  
+
+<section id="galeria">
+  <div class="container">
+    <h2>Galeria de Momentos</h2>
+    <img src="foto-nos2.jpeg" alt="Foto 1">
+    <img src="foto-nos1.jpeg" alt="Foto 2">
+    <img src="foto-nos3.jpeg" alt="Foto 3">
+  </div>
+</section>
+
+<section id="carta">
+  <div class="container">
+    <h2>Carta de Amor 💌</h2>
+    <p>Meu amor,</p>
+    <p>Esses 9 meses ao seu lado foram os mais especiais da minha vida. A cada sorriso seu, meu coração se aquece. Que a gente continue escrevendo essa história linda, com carinho, cumplicidade e muito amor.</p>
+    <p>Com todo meu coração,</p>
+    <p><strong>Gustavo</strong></p>
+  </div>
+</section>
+
+<section id="playlist">
+  <div class="container">
+    <h2>Playlist do Amor 🎶</h2>
+    <p>Nossas músicas favoritas pra ouvir juntinhos:</p>
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1CJ6hgrO19NFFtCWhfPOgX?utm_source=generator" width="50%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </div>
+</section>
+
+<section id="depoimentos">
+  <div class="container">
+    <h2>Depoimentos 💬</h2>
+    <p>"Você é o meu lugar favorito no mundo."</p>
+    <p>"Desde que te conheci, tudo ficou mais bonito."</p>
+    <p>"Amo cada detalhe em você, até o jeitinho que sorri."</p>
+  </div>
+</section>
+
+<section id="surpresa">
+  <div class="container">
+    <h2>🎁 Surpresinha...</h2>
+    <button class="btn" onclick="mostrarNota()">Clique aqui para abrir uma carta escondida</button>
+    <div class="hidden-note" id="notaEscondida">
+      <p>Surpresa! 🌟 Você é a melhor parte da minha vida. Obrigado por existir e por me fazer tão feliz!</p>
+      <p>Não vejo a hora do nosso próximo aniversario de namoro em <strong>27/05/2025</strong>! ⏳</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Com amor, Gustavo 💖</p>
+</footer>
+
+<script>
+  function mostrarNota() {
+    document.getElementById("notaEscondida").style.display = "block";
+  }
+
+  function abrirModal(id) {
+    document.getElementById(id).style.display = 'block';
+  }
+
+  function fecharModal(id) {
+    document.getElementById(id).style.display = 'none';
+  }
+
+  // Fecha o modal ao clicar fora dele
+  window.onclick = function(event) {
+    const modais = document.querySelectorAll('.modal');
+    modais.forEach(modal => {
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    });
+  }
+
+</script>
+
+</body>
+</html>
